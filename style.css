@@ -88,10 +88,12 @@ nav{
 }
 .mainhead{
     font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .subhead{
     font-size: 20px;
     color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .aboutbody{
     margin-top: 20px;
@@ -119,7 +121,7 @@ nav{
     margin-left: 1rem;
 }
 #skill{
-    margin: 8% 8% 0px 8%;
+    margin: 8% 8% 8% 8%;
 }
 .skillcontent{
     display: grid;
@@ -127,24 +129,20 @@ nav{
     align-items: center;
     gap: 2rem;
     margin-top: 20px;
-
 }
-.myskill{
-    width: 80%;
-}
-.bar{
+.bars{
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     padding: 1rem 0px;
 }
-.barhead,.basepercent{
+.barHead,.barpercent{
     font-weight: 500;
     font-size: 1.3rem;
 }
 .basebar{
-    width: 100px;
+    width: 100%;
     height: 0.5rem;
     background-color: black;
     border-radius: 10px;
@@ -153,29 +151,28 @@ nav{
 }
 .htmlbar{
     background-color: orange;
-    width: 92%;
+    width: 87%;
 }
 .cssbar{
     background-color: orange;
-    width: 90%;
+    width: 80%;
 }
 .jsbar{
     background-color: orange;
-    width: 88%;
+    width: 77%;
 }
 .reactbar{
     background-color: orange;
-    width:90%;
+    width: 97%;
 }
 #contact{
-    margin: 4% 8% 0% 8%;
+    margin: 4% 8% 0px 8%;
 }
-.iconcollection{
+.iconcollections{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5%;
-
+    margin-top: 5%;
 }
 .icon{
     width: 50px;
@@ -186,7 +183,6 @@ nav{
     justify-content: center;
     align-items: center;
     margin: 0px 10px;
-
 }
 .brands{
     color: black;
@@ -197,27 +193,51 @@ nav{
 }
 .icon:hover .brands{
     color: white;
+    /* animation */
     animation: rotate 3s;
 }
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+footer{
+    margin-top: 8%;
+}
 #copyright{
-    margin: 10px;
     text-align: center;
-    font-weight: 800;
-
+    font-weight: 600;
 }
 .uparrow{
     float: right;
-    margin: -30px 20px 40px 0px;
+    margin: -30px 20px 20px 0px;
 }
 html{
     scroll-behavior: smooth;
 }
 ::-webkit-scrollbar{
-    background-color: black;
-
-}
-::-webkit-scrollbar-thumb{
-    background-color: yellow;
+    width: 10px;
     border-radius: 10px;
 }
-
+::-webkit-scrollbar-track{
+    background-color: aliceblue;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+}
